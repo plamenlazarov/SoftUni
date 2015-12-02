@@ -1,0 +1,16 @@
+body {
+    background-color: #ADD8E6;
+}
+
+dl dt {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

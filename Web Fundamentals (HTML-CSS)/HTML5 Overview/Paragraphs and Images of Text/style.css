@@ -1,0 +1,21 @@
+.wrapper {
+    width: 500px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+img.right { 
+    float: right;
+    width: 130px;
+    height: 90px;
+}
+
+header {
+    text-align: center;
+}
+

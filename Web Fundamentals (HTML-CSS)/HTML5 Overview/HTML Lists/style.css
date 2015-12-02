@@ -1,0 +1,26 @@
+#wrapper {
+    border: 1px solid #DCDCDC;
+    width: 300px;
+    border-radius: 10px;
+}
+
+p {
+    margin-left: 5px;
+    margin-top: 5px
+}
+
+.rimski {
+    list-style-type: upper-roman;
+}
+
+.letters {
+    list-style-type: lower-alpha;
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+.disc {
+    list-style-type: disc;
+}

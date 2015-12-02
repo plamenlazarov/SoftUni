@@ -1,0 +1,52 @@
+body {
+    background-image: url('background.png');
+    font-family: calibri;
+}
+
+body h1 {
+    margin-left: 10px;
+}
+
+body img {
+    float: right;
+    position: relative;
+    bottom: 60px;
+    right: 35px;
+}
+
+body h1, span{
+    color: #FED46A;
+}
+
+body h2 {
+    color: white;
+}
+
+body div ul {
+    color: #FED46A;
+    list-style: square;
+}
+
+.content  {
+    margin-left: 20px;
+    color: #FFF8D6;
+    background-color: #212121;
+    border:1px solid #746E66;
+    width: 93%;
+    padding: 5px;
+}
+
+.content span {
+    color: #FFF8D6;
+}
+
+.page {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+}
+
+#indent {
+    padding-left: 20px;
+}
