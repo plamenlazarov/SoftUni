@@ -1,0 +1,52 @@
+body {
+    font-family: tahoma;
+    font-size: 20px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+td, th {
+    width: 120px;
+    height: 70px;
+    padding: 5px;
+}
+
+table table td {
+    text-align: center;
+}
+
+th {
+    font-size: 2.5em;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.right {
+    text-align: right;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+#fb {
+    text-align: center;
+    vertical-align: top;
+}
+
+#youtube {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.bold {
+    font-weight: bold;
+}

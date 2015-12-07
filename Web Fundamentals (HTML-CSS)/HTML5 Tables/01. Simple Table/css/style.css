@@ -1,0 +1,15 @@
+table {
+    width: 400px;
+    height: 200px;
+    font-size: 18px;
+}
+
+thead tr th {
+    font-size: 43px;
+    text-align: left;
+}
+
+p, h2 {
+    margin: 0;
+}
+

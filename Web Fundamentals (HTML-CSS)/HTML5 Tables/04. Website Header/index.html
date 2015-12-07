@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Website Header</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="logo">
+            <a href="http://softuni.bg">
+                <img src="./img/logo.png" alt="SoftUni Logo">
+            </a>
+        </div>
+        <nav>
+            <div class="nav-links">
+                <ul class="main-menu">
+                    <li id ="sub-menu-link" class="arrow-down" >
+                        <a href="">softuni</a>
+                        <div id="sub-menu">
+                            <ul>
+                                <li><a href="">About SoftUni</a></li>
+                                <li><a href="">Diplomas and Cerificates</a></li>
+                                <li><a href="">Fees and scolarchips</a></li>
+                                <li><a href="">Partner universities</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="arrow-down"><a href="https://softuni.bg/trainings/courses#advanced-level-front-end">traning</a></li>
+                    <li><a href="https://softuni.bg/companies">jobs</a></li>
+                    <li><a href="https://softuni.bg/partners">partners</a></li>
+                    <li><a href="https://softuni.bg/forum">forum</a></li>
+                    <li><a href="https://softuni.bg/contacts">contacts</a></li>
+                    <li><a href="#"><span class="fa fa-search"></span></a></li>
+                    <li><a href=""><span class="user-avatar"><span class="fa fa-user"></span></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script>
+        $(function(){
+            $("#sub-menu-link").on("click", "a", function(e){
+                e.preventDefault();
+                var submenu = $("#sub-menu");
+
+                if(submenu.css("display") == "none"){
+                    submenu.css("display", "block");
+                } else {
+                    submenu.css("display", "none");
+                }
+            });
+        });
+    </script>
+<body>
+</html>
+
