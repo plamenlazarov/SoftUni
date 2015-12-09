@@ -1,0 +1,38 @@
+#wrapper {
+    width: 46%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: pink;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.audio-files audio {
+    display: block;
+    margin: 5px;
+}
+
+.audio-files audio:first-of-type {
+    padding: 30px 0 60px;
+    background: #000;
+}
+
+section {
+    float: left;
+}
+
+section figure {
+    margin: 3px;
+}
+
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
