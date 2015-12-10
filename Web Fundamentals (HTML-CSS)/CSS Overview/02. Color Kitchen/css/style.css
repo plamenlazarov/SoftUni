@@ -1,0 +1,147 @@
+/* In order to compare the index.html to example.html make sure both pages are zoomed in 100% */
+
+html, head, body {
+    margin: 0;
+    padding: 0;
+}
+
+body #wrapper {
+    background-image: url("../img/colorful_dots_on_black.jpg");
+    font-family: Tahoma;
+    width: 1582px;
+
+}
+
+body #wrapper > header {
+    margin-bottom: 38px;
+    padding: 0 0 28px 58px;
+    color: yellow;
+    background-color: #008000;
+    border-left: 531px solid red;
+    border-right: 521px solid blue;
+    font-size: 60px;
+    font-weight: bold;
+
+
+}
+
+aside {
+    margin-top: 2px;
+    margin-left: 16px;
+    padding: 0;
+    background: white;
+    width: 316px;
+    border-radius: 30px;
+    opacity: 0.9;
+    float: left;
+
+}
+
+aside nav header {
+    padding: 20px 0 0 20px;
+    font-size: 1.9em;
+    text-decoration: underline;
+}
+aside nav ul {
+    padding-left: 25px;
+}
+
+aside nav ul li {
+    list-style-type: none;
+    padding: 1px 0 16px 35px;
+    font-size: 20px;
+    background-image: url('../img/check.png');
+    background-size: 20px 20px;
+    background-position: 3px 5px;
+    background-repeat: no-repeat;
+}
+
+aside nav ul li:hover a{
+    background-color: red;
+    padding: 15px;
+    padding-left: 15px;
+    margin-right: 35px;
+    border-radius: 15px;
+}
+
+aside nav ul li:last-of-type {
+    padding-bottom: 14px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+aside nav ul li:last-of-type a{
+    color: gray;
+}
+
+section {
+    margin-left: 363px;
+}
+
+section	article {
+    width: 1123px;
+    background-color: white;
+    border-radius: 30px;
+    padding:20px;
+    margin: 13px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+article header {
+    padding: 17px 0 16px 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 1.7em;
+}
+
+article div:first-letter {
+    font-size: 4em;
+    font-style: italic;
+}
+
+article div:first-line {
+    font-style: italic;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+footer a {
+    color: gray;
+    font-style: italic;
+
+}
+
+#webColors {
+    background: red;
+
+}
+
+#webSafeColors {
+    background: #FFA500;
+}
+
+#RGB {
+    background: yellow;
+}
+
+#RGBA {
+    background: green;
+}
+
+#lorem {
+    background: #800080;
+}
+#HSLHSV {
+    background: blue;
+}
+
+#HSLHSV, #RGBA, #webColors, #lorem {
+    color: white;
+}
