@@ -1,5 +1,5 @@
 #wrapper {
-    width: 860px;
+    width: 46%;
     margin: 0 auto;
     padding: 10px;
     border-radius: 10px;
