@@ -30,6 +30,10 @@ section figure {
     margin: 3px;
 }
 
+p {
+    margin: 0;
+}
+
 .clearfix:after {
     display: table;
     content: "";

@@ -12,7 +12,7 @@
             <figure>
                 <figcaption>User: Kent</figcaption>
                 <img src="img/KentProfilePic.png" alt="Kent logo">
-                <p>Profile completed 60%</p>
+                <figcaption>Profile completed 60%</figcaption>
                 <meter value="0.6"></meter>
             </figure>
         </section>
