@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Windows Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="inside-div">
+            <nav>
+                <ul id="nav">
+                    <li id="first"><a href="#">View</a></li>
+                    <li id="second"><a href="#">Edit</a></li>
+                    <li id="third"><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <div id="sum">
+                <input type="text" title="numbers" value="0" />
+            </div>
+            <div id="zeros">
+                <ul class="inline">
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                </ul>
+                <ul class="inline lighter-nums">
+                    <li>63</li>
+                    <li class="decimals">47</li>
+                    <li>32</li>
+                </ul>
+                <ul class="inline">
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                    <li>0000</li>
+                </ul>
+                <ul class="inline lighter-nums">
+                    <li>31</li>
+                    <li class="decimals">15</li>
+                    <li>10</li>
+                </ul>
+            </div>
+            <div id="position-left">
+                <div class="words">
+                    <input type="radio" name="nums" id="hex" />
+                    <label for="hex">Hex</label>
+                    <input type="radio" name="nums" id="dec" checked />
+                    <label for="dec">Dec</label>
+                    <input type="radio" name="nums" id="oct" />
+                    <label for="oct">Oct</label>
+                    <input type="radio" name="nums" id="bin" />
+                    <label for="bin">Bin</label>
+                </div>
+                <div class="words">
+                    <input type="radio" name="qword-to-byte" id="qword" checked />
+                    <label for="qword">Qword</label>
+                    <input type="radio" name="qword-to-byte" id="dword" />
+                    <label for="dword">Dword</label>
+                    <input type="radio" name="qword-to-byte" id="word" />
+                    <label for="word">Word</label>
+                    <input type="radio" name="qword-to-byte" id="byte" />
+                    <label for="byte">Byte</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="not-active">&nbsp;</button>
+                    <button class="active">Mod</button>
+                    <button class="not-active">A</button>
+                    <button class="not-active">MC</button>
+                    <button class="not-active">MR</button>
+                    <button class="not-active">MS</button>
+                    <button class="not-active">M+</button>
+                    <button class="not-active">M-</button>
+                </div>
+                <div class="row">
+                    <button class="active">(</button>
+                    <button class="active">)</button>
+                    <button class="not-active">B</button>
+                    <button class="active">&larr;</button>
+                    <button class="active">CE</button>
+                    <button class="active">C</button>
+                    <button class="active">&#177;</button>
+                    <button class="not-active">&#8730;</button>
+                </div>
+                <div class="row">
+                    <button class="active">RoL</button>
+                    <button class="active">RoR</button>
+                    <button class="not-active">C</button>
+                    <button class="active">7</button>
+                    <button class="active">8</button>
+                    <button class="active">9</button>
+                    <button class="active">/</button>
+                    <button class="not-active">%</button>
+                </div>
+                <div class="row">
+                    <button class="active">Or</button>
+                    <button class="active">Xor</button>
+                    <button class="not-active">D</button>
+                    <button class="active">4</button>
+                    <button class="active">5</button>
+                    <button class="active">6</button>
+                    <button class="active">*</button>
+                    <button class="not-active">1/&chi;</button>
+                </div>
+                <button id="equal" class="active">=</button>
+                <div class="row">
+                    <button class="active">Lsh</button>
+                    <button class="active">Rsh</button>
+                    <button class="not-active">E</button>
+                    <button class="active">1</button>
+                    <button class="active">2</button>
+                    <button class="active">3</button>
+                    <button class="active">-</button>
+                </div>
+                <div class="row">
+                    <button class="active">Not</button>
+                    <button class="active">And</button>
+                    <button class="not-active">F</button>
+                    <button class="active zero">0</button>
+                    <button class="active">.</button>
+                    <button class="active">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

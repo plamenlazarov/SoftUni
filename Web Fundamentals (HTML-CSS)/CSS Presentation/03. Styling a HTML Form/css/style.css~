@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+form {
+    background-image: url('../img/formBackground.jpg');
+    width: 386px;
+    padding: 5px;
+    padding-top: 20px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+div {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 6px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+label {
+    padding-left: 5px;
+    width: 90px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+input:not([type="radio"]), textarea{
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    width: 185px;
+}
+
+textarea {
+    height: 80px;
+    vertical-align: top;
+}
+
+input[type="submit"] {
+    width: 100px;
+    padding: 8px;
+    margin-left: 140px;
+    margin-top: 10px;
+    background: #04152F;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+#details  label{
+    padding: 3px;
+}
+
+#details label:nth-of-type(2n){
+    margin-left: -5px;
+    text-indent: 30px;
+    background-image: url('../img/visa.jpg');
+    background-repeat: no-repeat;
+    background-position: 1%;
+}
+
+#details label:nth-of-type(3n) {
+    margin-left: 0px;
+    background: url('../img/amex.jpg');
+    background-repeat: no-repeat;
+    text-indent: 30px
+}
+
+#details label:last-child {
+    background: url('../img/master.jpg');
+    background-repeat: no-repeat;
+}
+
+#master label {
+    color: white;
+}
+
+input[type="radio"]{
+    margin: 0;
+}

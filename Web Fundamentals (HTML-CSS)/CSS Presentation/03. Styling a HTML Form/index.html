@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styling a HTML Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Step 1: Your details</legend>
+            <div>
+                <label for="name">Name</label>
+                <input type="text"  id="name" placeholder="First and last name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email"  id="email" placeholder="example@domian.com">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="text"  id="phone" placeholder="eg. +447500000000">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Step 1: Delivery address</legend>
+            <div id="address">
+                <label for="address">Address</label>
+                <textarea id="address"></textarea>
+            </div>
+            <div>
+                <label for="post-code">Post code</label>
+                <input type="text" id="post-code">
+            </div>
+            <div>
+                <label for="country">Post code</label>
+                <input type="text" id="country">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Step 1: Card details</legend>
+            <div id="details">
+                <label for="cards">Card type</label><br/>
+                <input type="radio" id="visa">
+                <label for="visa">VISA</label>
+                <input type="radio" id="amex">
+                <label for="amex">AmEx</label>
+                <input type="radio" id="master">
+                <label for="master">Mastercard</label>
+            </div>
+            <div>
+                <label for="card-number">Card number</label>
+                <input type="text" id="card-number">
+            </div>
+            <div>
+                <label for="sec-code">Security code</label>
+                <input type="text" id="sec-code">
+            </div>
+            <div>
+                <label for="card-name">Name on card</label>
+                <input type="text" id="card-name" placeholder="exact name as on the card">
+            </div>
+            <input type="submit" value="BUY IT!">
+        </fieldset>
+    </form>
+</body>
+</html>
