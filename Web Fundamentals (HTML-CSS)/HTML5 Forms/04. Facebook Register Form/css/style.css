@@ -1,0 +1,138 @@
+.clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#wrapper {
+    margin: 0 auto;
+    color: #FFF;
+    background: #415F9C;
+    font-size: 14px;
+    font-family: sans-serif;
+    width: 990px;
+}
+
+#birthday {
+    margin: 5px 0;
+    display: block;
+}
+
+.b-day {
+    margin-left: 5px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 7em;
+}
+
+h1 span {
+    font-size: 0.3em;
+    margin: -20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    float: left;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+.info {
+    margin: 0 30px 15px 15px;
+    padding-bottom: 40px;
+    width: 352px;
+}
+
+.info input[type="datetime"] {
+    width: 220px;
+}
+
+.info-required {
+    width: 525px;
+}
+
+.info-required select {
+    padding: 5px 5px 5px 0;
+    width: 170px;
+    background: #FFF;
+    border-radius: 4px;
+}
+
+.info-required p {
+    margin: 5px 0;
+}
+
+.info-required textarea {
+    width: 100%;
+}
+
+.address-row input {
+    width: 70px;
+}
+
+.address-row input:first-of-type {
+    width: auto;
+}
+
+.color-row input, select {
+    vertical-align: middle;
+}
+
+input[type="color"] {
+    width: 170px;
+    padding: 0;
+    height: 30px;
+}
+
+input, textarea {
+    margin-bottom: 5px;
+    padding: 5px 0;
+    border-radius: 4px;
+}
+
+.buttons {
+    margin: 15px 15px 10px 15px;
+}
+
+button {
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 2em;
+    color: #415F9C;
+}
+
+button[type="reset"] {
+    margin-left: 0;
+    width: 380px;
+}
+
+button[type="submit"] {
+    margin-right: 0;
+    width: 550px;
+    float: right;
+}

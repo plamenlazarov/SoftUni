@@ -1,0 +1,66 @@
+#wrapper {
+    margin: auto;
+    border: 1px solid gray;
+    width: 830px;
+}
+
+table {
+    display: inline-block;
+}
+
+table tbody tr td div {
+    text-align: left;
+}
+
+th {
+    color: #2C4057;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+button {
+    background: #FFFFFF;
+    border: 1px solid #E2F2FB;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.price {
+    width: 100px;
+    height:30px;
+    background-color: #2D4760;
+    color: white;
+    border-top-left-radius: 5px;
+    padding-top: 10px;
+    margin-left: 100px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.model {
+    font-weight: bold;
+}
+
+#range {
+    display: inline-block;
+    background-color: #F8FCFF;
+
+}
+
+.parameter {
+    text-align: center;
+}
+
+.min {	
+    float: left;
+    padding-left: 10px;
+}
+
+.max {
+    float: right;
+    padding-right: 10px;
+}
+

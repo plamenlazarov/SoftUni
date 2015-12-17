@@ -1,0 +1,14 @@
+form {
+    border: 1px solid black;
+    width: 360px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#search {
+    margin-top: 10px;
+}
+
+#search img {
+    vertical-align: middle;
+}

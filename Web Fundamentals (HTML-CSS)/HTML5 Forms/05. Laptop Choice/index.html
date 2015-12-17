@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Laptop Choise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Apple's Laptops(6)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <button onclick="window.open('http://store.apple.com/uk/buy-mac/macbook-air?product=MD711B/B&step=config#')">
+                            <div class="model">Apple MacBook Air</div>
+                            <div>11.6 inch/1.4GHz Haswell/128GB</div>
+                            <img src="images/macbookair.png" alt="APPLE MACBOOK AIR">
+                            <div class="price">749&pound;</div>
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="window.open('http://store.apple.com/uk/buy-mac/macbook-air?product=MD712B/B&step=config#')">
+                            <div class="model">Apple MacBook Air</div>
+                            <div>11.6 inch/1.4GHz Haswell/256GB</div>
+                            <img src="images/macbookair.png" alt="APPLE MACBOOK AIR">
+                            <div class="price">899&pound;</div>
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="window.open('http://store.apple.com/uk/buy-mac/macbook-air?product=MD760B/B&step=config#')">
+                            <div class="model">Apple MacBook Air</div>
+                            <div>13.6 inch/1.4GHz Haswell/128GB</div>
+                            <img src="images/macbookair.png" alt="APPLE MACBOOK AIR">
+                            <div class="price">849&pound;</div>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="window.open('http://store.apple.com/uk/buy-mac/macbook-pro?product=MGX72B/A&step=config#')">
+                            <div class="model">Apple MacBook Pro</div>
+                            <div>13.6 inch/2.6GHz/128GB</div>
+                            <img src="images/macbookpro.png" alt="APPLE MACBOOK PRO">
+                            <div class="price">849&pound;</div>
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="window.open('http://store.apple.com/uk/buy-mac/macbook-pro?product=MGX92B/A&step=config#')">
+                            <div class="model">Apple MacBook Pro</div>
+                            <div>13.6 inch/2.8GHz/512GB</div>
+                            <img src="images/macbookpro.png" alt="APPLE MACBOOK PRO">
+                            <div class="price">1399&pound;</div>
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="window.open('http://store.apple.com/uk/buy-mac/macbook-pro?product=MGXA2B/A&step=config#')">
+                            <div class="model">Apple MacBook Pro</div>
+                            <div>15 inch/2.2GHz/256GB</div>
+                            <img src="images/macbookpro.png" alt="APPLE MACBOOK PRO">
+                            <div class="price">1599&pound;</div>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="range">
+
+            <div class="parameter">Price</div> 
+            <div><span class="min">1700</span> <span class="max">2600</span></div>
+            <input class="range" type="range" name="price" min="1700" max="2600" step="100" >
+
+            <div class="parameter">RAM</div> 
+            <div><span class="min">2048</span> <span class="max">4096</span></div>
+            <input class="range" type="range" name="ram" min="2048" max="4096" step="256" >
+
+            <div class="parameter">Disk</div> 
+            <div><span class="min">100GB</span> <span class="max">2000GB</span></div>
+            <input class="range" type="range" name="disk" min="100" max="20000" step="100" >
+
+            <div class="parameter">Display</div> 
+            <div><span class="min">11.6</span> <span class="max">18.4</span></div>
+            <input class="range" type="range" name="display" min="11.6" max="18.4" step="0.8" >
+
+            <div class="parameter">Weight</div> 
+            <div><span class="min">1</span> <span class="max">6</span></div>
+            <input class="range" type="range" name="weight" min="1" max="6" step="0.6" >
+
+            <div class="parameter">Warranty</div> 
+            <div><span class="min">12 months</span> <span class="max">60 months</span></div>
+            <input class="range" type="range" name="warranty" min="12" max="60" step="12" >
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <form action="#">
+            <fieldset>
+                <legend>Flight order</legend>
+                <div class="from-details">
+                    <label for="city">
+                        From
+                        <select name="from-city" id="from-city">
+                            <option value="" disabled selected>enter a city</option>
+                            <option value="1">Sofia</option>
+                            <option value="2">Plovdiv</option>
+                            <option value="3">Varna</option>
+                        </select>
+                    </label>
+                    <label for="departure">
+                        Departure Date
+                        <input type="date" id="departure" value="2014-09-06">
+                    </label>
+
+                    <label for="return">
+                        Return Date
+                        <input type="date" id="return" value="2014-03-06">
+                    </label>
+
+                    <div class="labels">
+                        <label for="twelve">
+                            12+
+                            <input type="number" id="twelve" value="0">
+                        </label>
+
+                        <label for="two-twelve">
+                            2-12
+                            <input type="number" id="two-twelve" value="0">
+                        </label>
+
+                        <label for="zero-twelve">
+                            0-2
+                            <input type="number" id="zero-twelve" value="0">
+                        </label>
+                    </div>
+                </div>
+                <div class="to-details">
+                    <label>To</label>
+                    <select name="to-city" id="to-city">
+                        <option value="" disabled selected>enter a city</option>
+                        <option value="1">Sofia</option>
+                        <option value="2">Plovdiv</option>
+                        <option value="3">Varna</option>
+                    </select>
+                    <div>
+                        <input type="checkbox" value="yes" id="prefer-directs">
+                        <label for="prefer-directs">Prefer directs</label>
+                    </div>
+                    <label>Time Interval</label>
+                    <input type="time">
+                    <input type="time">
+                    <label>Time Interval</label>
+                    <input type="time">
+                    <input type="time">
+                    <label>Choose class</label>
+                    <select name="class">
+                        <option value="1">Economy</option>
+                        <option value="2">Business</option>
+                    </select>
+                </div>
+                <input type="submit" name="search" id="search" value="Search">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

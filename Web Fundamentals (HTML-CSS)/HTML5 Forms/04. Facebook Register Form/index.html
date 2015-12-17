@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fakebook Register Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>
+                fakebook
+                <span>&reg;</span>
+            </h1>
+            <h2>Registration</h2>
+            <p>It is safe and will always be!</p>
+        </header>
+        <form action="#" class="clearfix">
+            <fieldset class="info clearfix">
+                <legend>None Important Information</legend>
+                <div>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Your Email">
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+                <div>
+                    <input type="password" placeholder="Your Password">
+                    <input type="text" placeholder="Website">
+                </div>
+                <label for="birthday" class="b-day">
+                    Birthday
+                    <input type="datetime" id="birthday">
+                </label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio"  name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio"  name="gender" id="other">
+                <label for="other">Other</label>
+            </fieldset>
+            <fieldset class="info-required clearfix">
+                <legend>Important Information *required</legend>
+                <div>
+                    <select name="country">
+                        <option selected disabled>Country</option>
+                        <option value="1">USA</option>
+                        <option value="2">UK</option>
+                    </select>
+                    <input type="text" required placeholder="Village">
+                    <input type="text" required placeholder="District">
+                </div>
+                <div class="address-row">
+                    <input type="text" required pplaceholder="Street">
+                    <input type="text" required placeholder="Nr">
+                    <input type="text" required placeholder="Floor">
+                    <input type="text" required placeholder="Ap Nr">
+                </div>
+                <div class="color-row">
+                    <p>Door Color</p>
+                    <input type="color" value="#FF86C4" id="color">
+                    <input type="text" placeholder="Water Meter Nr">
+                    <select required><option selected disabled>Aunt Panties's Size</option></select>
+                </div>
+                <p>More Personal Information</p>
+                <textarea name="more-info" cols="30" rows="5" required placeholder="Give Us More Information!!!"></textarea>
+            </fieldset>
+            <div class="buttons">
+                <button type="reset">Clear Form</button>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
