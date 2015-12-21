@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Header</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header class="clearfix">
+        <div id="logo">
+            <a href="https://softuni.bg">
+                <img src="./img/logo.png" alt="SoftUni Logo">
+                <span class="beta">beta</span>
+            </a>
+        </div>
+        <div class="user-info">
+            <ul>
+                <li class="notification">
+                    <a href="#">0</a>
+                    <img src="./img/notifications-icon.png" alt="icon">
+                </li>
+                <li class="user">
+                    <a href="#"><span>User</span></a>
+                </li>
+                <li>
+                    <form action="#">
+                        <input type="search" name="search" placeholder="Search">
+                        <input type="image" name="image" src="./img/search.png">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown-link">
+                    <a href=""><span>News</span></a>
+                    <div id="sub-menu">
+                        <ul>
+                            <li><a href="">About SoftUni</a></li>
+                            <li><a href="">Diplomas and Cerificates</a></li>
+                            <li><a href="">Fees and scolarchips</a></li>
+                            <li><a href="">Partner universities</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown-link"><a href=""><span>About the university</span></a></li>
+                <li><a href="">Training courses</a></li>
+                <li><a href="">For companies</a></li>
+                <li><a href="">Forum</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="js/dropdown.js"></script>
+</body>
+</html>

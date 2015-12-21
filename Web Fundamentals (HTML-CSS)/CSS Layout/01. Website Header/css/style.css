@@ -1,0 +1,136 @@
+html, body, header, nav, div, a, img, span, ul, li, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+header {
+    padding: 15px 20px 10px 20px;
+    background: #234465;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#logo {
+    float: left;
+}
+
+.beta {
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+}
+
+.user-info {
+    margin-bottom: 10px;
+    float: right;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.notification {
+    margin-right: 15px;
+}
+
+.notification a {
+    font-weight: bold;
+}
+
+.notification img {
+    vertical-align: bottom;
+}
+
+.user {
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.user a span{
+    padding-right: 7px;
+    font-size: 14px;
+}
+
+.user a:after {
+    content: '';
+    position: absolute;
+    margin-top: 5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+.user-info input {
+    padding: 5px;
+    width: 210px;
+    border: 0;
+    border-radius: 3px;
+    vertical-align: bottom;
+
+}
+
+nav {
+    float: right;
+    clear: right;
+}
+
+nav li a {
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav li a:last-of-type {
+    padding-right: 0;
+}
+
+nav .dropdown-link a span {
+    padding-right: 7px;
+}
+
+nav .dropdown-link > a:after {
+    content: '';
+    position: absolute;
+    margin-top: 7px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+#sub-menu {
+    text-align: center;
+    display: none;
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    color: white;
+    background: #162b40;
+}
+
+#sub-menu li {
+    margin-right: 130px;
+}
+
+input[type="image"] {
+    width: 15px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    border-left: 1px solid #aaa;
+}
+
+
