@@ -1,0 +1,299 @@
+$header-color: #808080;
+$single-border: 1px solid black;
+$double-border: 3px double black;
+
+@mixin h3-styles {
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: underline;
+    color: $header-color;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+@mixin square-styles {
+    width: 150px;
+    height: 170px;
+    border-radius: 20px;
+    background: red;
+    float: left;
+}
+
+@mixin purple-gradient($direction) {
+    background: linear-gradient($direction,  #310231, #ffffff);
+}
+
+@mixin blue-gradient($direction) {
+    background: linear-gradient($direction,  #0404B0 10%,#ffffff 112%);
+}
+
+@mixin green-gradient($direction) {
+    background: linear-gradient($direction,  #023102 10%,#ffffff 112%);
+}
+@mixin yellow-gradient($direction) {
+    background: linear-gradient($direction,  #F5F503 10%,#ffffff 112%);
+}
+@mixin orange-gradient($direction) {
+    background: linear-gradient($direction,  #EC9202 10%,#ffffff 112%);
+}
+@mixin red-gradient($direction) {
+    background: linear-gradient($direction,  #CD0000 10%,#ffffff 112%);
+}
+
+/* RADIAL GRADIENTS */
+
+@mixin radial-purple-gradient {
+    background: radial-gradient(circle,  #310231, #ffffff);
+}
+
+@mixin radial-blue-gradient {
+    background: radial-gradient(circle,  #0404B0 10%,#ffffff 112%);
+}
+
+@mixin radial-green-gradient {
+    background: radial-gradient(circle,  #023102 10%,#ffffff 112%);
+}
+@mixin radial-yellow-gradient {
+    background: radial-gradient(circle,  #F5F503 10%,#ffffff 112%);
+}
+@mixin radial-orange-gradient {
+    background: radial-gradient(circle,  #EC9202 10%,#ffffff 112%);
+}
+@mixin radial-red-gradient {
+    background: radial-gradient(circle,  #CD0000 10%,#ffffff 112%);
+}
+
+.clearfix {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+body {
+    font-family: sans-serif;
+
+    #wrapper {
+        width: 1000px;
+        margin: 0 auto;
+
+        header {
+            border: $double-border;
+            h1 {
+                text-align: center;
+                font-size: 2.5em;
+                color: $header-color;
+            }
+            ul {
+                li {
+                    border: $double-border;
+                    display: inline-block;
+                    &:first-of-type {
+                        margin-left: 220px;
+                        margin-right: 50px;
+                    }
+
+                    &:nth-child(2n) {
+                        margin-right: 50px;
+                    }
+
+                    &:hover {
+                        background: #888888; /* Old browsers */
+                        background: linear-gradient(to bottom,  #888888 0%,#888888 13%,#ffffff 97%);
+                    }
+
+                    a {
+                        padding: 20px;
+                        text-decoration: none;
+                        color: $header-color;
+                        line-height: 40px; 
+                    }
+                }
+            }
+        }
+
+        #content {
+            margin-top: 15px;
+
+            .linear-gradients {
+                padding: 15px;
+                border: $double-border;
+
+                h3 {
+                    @include h3-styles;
+                }
+
+                .container {
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    border: $single-border;
+                    padding: 15px;
+
+                    p {
+                        padding: 10px;
+                        font-size: 1.2em;
+                        text-align: center;
+                        color: $header-color;
+                    }
+
+                    div {
+                        @include square-styles;
+                    }
+                }
+
+                .vertical {
+                    .purple {
+                        @include purple-gradient(to bottom);
+                    }
+
+                    .blue {
+                        @include blue-gradient(to bottom);
+                    }
+
+                    .green {
+                        @include green-gradient(to bottom);
+                    }
+
+                    .yellow {
+                        @include yellow-gradient(to bottom);
+                    }
+
+                    .orange {
+                        @include orange-gradient(to bottom);
+                    }
+
+                    .red {
+                        @include red-gradient(to bottom);
+                    }
+                }
+
+                .horizontal {
+
+                    .purple {
+                        @include purple-gradient(to right);
+                    }
+
+                    .blue {
+                        @include blue-gradient(to right);
+                    }
+
+                    .green {
+                        @include green-gradient(to right);
+                    }
+
+                    .yellow {
+                        @include yellow-gradient(to right);
+                    }
+
+                    .orange {
+                        @include orange-gradient(to right);
+                    }
+
+                    .red {
+                        @include red-gradient(to right);
+                    }
+                }
+
+                .diagonal {
+
+                    .purple {
+                        @include purple-gradient(to bottom right);
+                    }
+
+                    .blue {
+                        @include blue-gradient(to bottom right);
+                    }
+
+                    .green {
+                        @include green-gradient(to bottom right);
+                    }
+
+                    .yellow {
+                        @include yellow-gradient(to bottom right);
+                    }
+
+                    .orange {
+                        @include orange-gradient(to bottom right);
+                    }
+
+                    .red {
+                        @include red-gradient(to bottom right);
+                    }
+                }
+            }
+
+            .radial-gradients {
+                padding: 15px;
+                margin-top: 15px;
+                border: $double-border;
+
+                h3 {
+                    @include h3-styles;
+                }
+                .container {
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    border: $single-border;
+                    padding: 15px;
+
+                    div {
+                        @include square-styles;
+                    }
+
+                    .purple {
+                        @include radial-purple-gradient;
+                    }
+
+                    .blue {
+                        @include radial-blue-gradient;
+                    }
+
+                    .green {
+                        @include radial-green-gradient;
+                    }
+
+                    .yellow {
+                        @include radial-yellow-gradient;
+                    }
+
+                    .orange {
+                        @include radial-orange-gradient;
+                    }
+
+                    .red {
+                        @include radial-red-gradient;
+                    }
+                }
+
+            }
+        }
+
+        footer {
+            margin-top: 15px;
+            padding: 20px;
+            border: $double-border;
+
+            h3 {
+                @include h3-styles;
+            }
+
+            ul {
+                margin-right: 40px;
+                list-style-type: none;
+
+                li {
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        color: $header-color;
+                        font-size: 1.2em;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+/* RADIAL GRADIENTS */
+.clearfix {
+  display: table;
+  content: '';
+  clear: both; }
+
+body {
+  font-family: sans-serif; }
+  body #wrapper {
+    width: 1000px;
+    margin: 0 auto; }
+    body #wrapper header {
+      border: 3px double black; }
+      body #wrapper header h1 {
+        text-align: center;
+        font-size: 2.5em;
+        color: #808080; }
+      body #wrapper header ul li {
+        border: 3px double black;
+        display: inline-block; }
+        body #wrapper header ul li:first-of-type {
+          margin-left: 220px;
+          margin-right: 50px; }
+        body #wrapper header ul li:nth-child(2n) {
+          margin-right: 50px; }
+        body #wrapper header ul li:hover {
+          background: #888888;
+          /* Old browsers */
+          background: linear-gradient(to bottom, #888888 0%, #888888 13%, #ffffff 97%); }
+        body #wrapper header ul li a {
+          padding: 20px;
+          text-decoration: none;
+          color: #808080;
+          line-height: 40px; }
+    body #wrapper #content {
+      margin-top: 15px; }
+      body #wrapper #content .linear-gradients {
+        padding: 15px;
+        border: 3px double black; }
+        body #wrapper #content .linear-gradients h3 {
+          margin-top: 5px;
+          text-align: center;
+          text-decoration: underline;
+          color: #808080;
+          font-size: 1.5em;
+          font-weight: normal; }
+        body #wrapper #content .linear-gradients .container {
+          margin: 0 auto;
+          margin-bottom: 10px;
+          border: 1px solid black;
+          padding: 15px; }
+          body #wrapper #content .linear-gradients .container p {
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            color: #808080; }
+          body #wrapper #content .linear-gradients .container div {
+            width: 150px;
+            height: 170px;
+            border-radius: 20px;
+            background: red;
+            float: left; }
+        body #wrapper #content .linear-gradients .vertical .purple {
+          background: linear-gradient(to bottom, #310231, #ffffff); }
+        body #wrapper #content .linear-gradients .vertical .blue {
+          background: linear-gradient(to bottom, #0404B0 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .vertical .green {
+          background: linear-gradient(to bottom, #023102 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .vertical .yellow {
+          background: linear-gradient(to bottom, #F5F503 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .vertical .orange {
+          background: linear-gradient(to bottom, #EC9202 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .vertical .red {
+          background: linear-gradient(to bottom, #CD0000 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .horizontal .purple {
+          background: linear-gradient(to right, #310231, #ffffff); }
+        body #wrapper #content .linear-gradients .horizontal .blue {
+          background: linear-gradient(to right, #0404B0 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .horizontal .green {
+          background: linear-gradient(to right, #023102 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .horizontal .yellow {
+          background: linear-gradient(to right, #F5F503 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .horizontal .orange {
+          background: linear-gradient(to right, #EC9202 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .horizontal .red {
+          background: linear-gradient(to right, #CD0000 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .diagonal .purple {
+          background: linear-gradient(to bottom right, #310231, #ffffff); }
+        body #wrapper #content .linear-gradients .diagonal .blue {
+          background: linear-gradient(to bottom right, #0404B0 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .diagonal .green {
+          background: linear-gradient(to bottom right, #023102 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .diagonal .yellow {
+          background: linear-gradient(to bottom right, #F5F503 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .diagonal .orange {
+          background: linear-gradient(to bottom right, #EC9202 10%, #ffffff 112%); }
+        body #wrapper #content .linear-gradients .diagonal .red {
+          background: linear-gradient(to bottom right, #CD0000 10%, #ffffff 112%); }
+      body #wrapper #content .radial-gradients {
+        padding: 15px;
+        margin-top: 15px;
+        border: 3px double black; }
+        body #wrapper #content .radial-gradients h3 {
+          margin-top: 5px;
+          text-align: center;
+          text-decoration: underline;
+          color: #808080;
+          font-size: 1.5em;
+          font-weight: normal; }
+        body #wrapper #content .radial-gradients .container {
+          margin: 0 auto;
+          margin-bottom: 10px;
+          border: 1px solid black;
+          padding: 15px; }
+          body #wrapper #content .radial-gradients .container div {
+            width: 150px;
+            height: 170px;
+            border-radius: 20px;
+            background: red;
+            float: left; }
+          body #wrapper #content .radial-gradients .container .purple {
+            background: radial-gradient(circle, #310231, #ffffff); }
+          body #wrapper #content .radial-gradients .container .blue {
+            background: radial-gradient(circle, #0404B0 10%, #ffffff 112%); }
+          body #wrapper #content .radial-gradients .container .green {
+            background: radial-gradient(circle, #023102 10%, #ffffff 112%); }
+          body #wrapper #content .radial-gradients .container .yellow {
+            background: radial-gradient(circle, #F5F503 10%, #ffffff 112%); }
+          body #wrapper #content .radial-gradients .container .orange {
+            background: radial-gradient(circle, #EC9202 10%, #ffffff 112%); }
+          body #wrapper #content .radial-gradients .container .red {
+            background: radial-gradient(circle, #CD0000 10%, #ffffff 112%); }
+    body #wrapper footer {
+      margin-top: 15px;
+      padding: 20px;
+      border: 3px double black; }
+      body #wrapper footer h3 {
+        margin-top: 5px;
+        text-align: center;
+        text-decoration: underline;
+        color: #808080;
+        font-size: 1.5em;
+        font-weight: normal; }
+      body #wrapper footer ul {
+        margin-right: 40px;
+        list-style-type: none; }
+        body #wrapper footer ul li {
+          text-align: center; }
+          body #wrapper footer ul li a {
+            text-decoration: none;
+            color: #808080;
+            font-size: 1.2em; }
+            body #wrapper footer ul li a:hover {
+              text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */

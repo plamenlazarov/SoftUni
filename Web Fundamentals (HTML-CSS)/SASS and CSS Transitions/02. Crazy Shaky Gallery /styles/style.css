@@ -1,0 +1,43 @@
+html, body, div, img {
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  margin: 10px auto;
+  width: 760px;
+  background: gray; }
+  #wrapper div {
+    width: 250px;
+    height: 150px;
+    display: inline-block; }
+    #wrapper div:hover {
+      cursor: pointer;
+      animation-name: shake;
+      animation-delay: 0.0s;
+      animation-duration: 0.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+    #wrapper div img {
+      width: 100%;
+      height: 100%; }
+      #wrapper div img:hover {
+        animation-name: rotate;
+        animation-delay: .5s;
+        animation-duration: 2s; }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(2deg); }
+  100% {
+    -webkit-transform: rotate(-2deg); } }
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0) scale(1); }
+  25% {
+    transform: scale(2); }
+  50% {
+    transform: rotate(360deg) scale(2); }
+  100% {
+    transform: rotate(0) scale(1); } }
+
+/*# sourceMappingURL=style.css.map */
