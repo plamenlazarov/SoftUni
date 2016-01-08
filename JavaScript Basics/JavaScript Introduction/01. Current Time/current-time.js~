@@ -1,4 +1,4 @@
 (function(){
     var now = new Date();
-    console.log(now.toUTCString());
+    console.log(now);
 })();
