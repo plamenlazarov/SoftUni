@@ -4,7 +4,7 @@ var arr2 = ['hi', 'bye', 'hello' ];
 Array.prototype.removeItem = function(value) {
     var newArr = [];
 
-    this.forEach(function(element, index, array){
+    this.forEach(function(element){
         if(element !== value) {
             newArr.push(element);
         }
@@ -12,7 +12,6 @@ Array.prototype.removeItem = function(value) {
 
     return newArr;
 };
-arr1.removeItem(1);
 
 console.log(arr1.removeItem(1));
 console.log(arr2.removeItem('bye'));
