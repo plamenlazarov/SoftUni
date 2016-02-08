@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D Geometry Structure - Prototypal model</title>
+</head>
+<body>
+    <script src="2dGeometry.js"></script>
+</body>
+</html>

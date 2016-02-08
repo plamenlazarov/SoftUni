@@ -1,0 +1,42 @@
+label, input {
+    display: block;
+}
+
+label:last-of-type,
+input[type="submit"],
+input[type="reset"], input[type="checkbox"] {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    background: #FFF8F1;
+}
+
+fieldset {
+    margin: 0 auto;
+}
+
+fieldset > div {
+    width: 185px;
+    margin: 0 auto;
+}
+
+legend {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.required {
+    color: red;
+}
+
+#invoice {
+    visibility: hidden;
+}
