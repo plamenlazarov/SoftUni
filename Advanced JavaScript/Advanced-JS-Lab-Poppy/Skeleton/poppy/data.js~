@@ -17,6 +17,7 @@ var poppy = (function(){
             this.message = message;
             this.type = type;
 
+
             return this;
         },
         _popupData: function() {
