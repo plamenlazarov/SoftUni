@@ -1,0 +1,25 @@
+html, body, section, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+
+#slider {
+    margin: 100px auto;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#slides {
+    width: 3000px;
+}
+
+.slide {
+    float: left;
+    list-style-type: none;
+}
+
+.slide img {
+    width: 400px;
+    height: 200px;
+}
