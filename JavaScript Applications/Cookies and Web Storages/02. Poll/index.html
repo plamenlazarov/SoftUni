@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <title>Poll</title>
+</head>
+<body>
+    <form>
+        <div id="timer"></div>
+        <div id="first-question">
+            <h3>Which is the world's most popular programming language?</h3>
+            <label for="c#">
+                <input type="radio" name="lang" id="c#" value="incorrect">C#
+            </label>
+            <label for="java">
+                <input type="radio" name="lang" id="java" value="incorrect">Java
+            </label>
+            <label for="js">
+                <input type="radio" name="lang" id="js" value="correct">JavaScript
+            </label>
+            <label for="python">
+                <input type="radio" name="lang" id="python" value="incorrect">Python
+            </label>
+        </div>
+        <div id="second-question">
+            <h3>What does BaaS stand for?</h3>
+            <label for="1">
+                <input type="radio" name="baas" id="1" value="incorrect">Business as a Service
+            </label>
+            <label for="2">
+                <input type="radio" name="baas" id="2" value="correct">Backend as a Service
+            </label>
+            <label for="3">
+                <input type="radio" name="baas" id="3" value="incorrect">Means nothing
+            </label>
+            <label for="4">
+                <input type="radio" name="baas" id="4" value="incorrect">I don't know
+            </label>
+        </div>
+        <div id="third-question">
+            <h3>What does IoT stand for?</h3>
+            <label for="iot">
+                <input type="radio" name="iot" id="iot" value="correct">Internet of Things
+            </label>
+            <label for="foo">
+                <input type="radio" name="iot" id="foo" value="incorrect">Means nothing
+            </label>
+            <label for="bar">
+                <input type="radio" name="iot" id="bar" value="incorrect">Interesting Operating System
+            </label>
+            <label for="baz">
+                <input type="radio" name="iot" id="baz" value="incorrect">Don't know
+            </label>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="output"></div>
+    <script src="js/poll.js"></script>
+</body>
+</html>
