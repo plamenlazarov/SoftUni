@@ -1,5 +1,4 @@
-$(function() {
-    var answers,
+$(function() {    var answers,
         answer,
         correctAnswers = 0,
         timer = $('#timer'),
@@ -13,10 +12,6 @@ $(function() {
     } else {
         answers = JSON.parse(localStorage.getItem('answers'));
     }
-
-    $('input:radio').on('change', function() {
-
-    });
 
     var countdownTimer = setInterval(function() {
         minutes = Math.round((seconds - 30) / 60);
