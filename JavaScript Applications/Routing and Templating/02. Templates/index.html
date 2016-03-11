@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Templates</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <script src="../mustache/mustache.js"></script>
+</head>
+<body>
+    <button>Load Table</button>
+    <script>
+        $('button').one('click', function() {
+            $.get('templates/table.html', function(template) {
+                var tableData = {
+                    data: [
+                        {name: 'Garry Finch', title: 'Front-end', website: 'website.com'},
+                        {name: 'Bob McFray', title: 'Photographer', website: 'google.com'},
+                        {name: 'Jenny O\'Sullivan', title: 'LEGO GEEK', website: 'stackoverflow.com'},
+                        {name: 'Garry Finch', title: 'Front-end', website: 'website.com'}
+                    ]
+                };
+
+                var table = Mustache.render(template, tableData);
+
+                $(document.body).append(table);
+            });
+        });
+    </script>
+</body>
+</html>

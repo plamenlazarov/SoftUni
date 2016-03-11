@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rounting</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sammy.js/0.7.6/sammy.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="#/Sam">Sam</a></li>
+        <li><a href="#/Bob">Bob</a></li>
+        <li><a href="#/Joe">Joe</a></li>
+    </ul>
+    <p id="route"></p>
+    <script>
+        var app = app || {};
+
+        (function() {
+            app.router = Sammy(function() {
+
+                this.get('#/Sam', function() {
+                    showName('Sam');
+                });
+
+                this.get('#/Bob', function() {
+                    showName('Bob');
+                });
+
+                this.get('#/Joe', function() {
+                    showName('Joe');
+                });
+            });
+
+            function showName(name) {
+                $('#route').html('<h2>Hello ' + name + '</h2>');
+            }
+
+            app.router.run('#/Sam');
+        }());
+    </script>
+</body>
+</html>
